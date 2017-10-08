@@ -29,6 +29,12 @@
                     <ion-label stacked>Note</ion-label>
                     <ion-textarea type="text" rows="3" maxLength="500" [(ngModel)]="input.note" name="note" textarea></ion-textarea>
                   </ion-item>
+
+                <ion-item>
+                  <agm-map [latitude]="lat" [longitude]="lng">
+                    <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+                  </agm-map> 
+                </ion-item>
         
               <div padding>
                 <button ion-button color="primary" block>SUBMIT</button>
